@@ -2,11 +2,11 @@ export function AddProductForm () {
 
   return (
 
-    <form className="rounded-lg border bg-neutral-800 p-5">
+    <main className="w-full h-screen flex justify-center items-center">
 
       
 
-    </form>
+    </main>
 
   )
 

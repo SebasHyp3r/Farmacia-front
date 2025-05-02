@@ -21,21 +21,21 @@ export function Dashboard () {
           <li className="flex gap-3 px-5 py-2 rounded-lg bg-neutral-800">
             <h2 className="font-semibold">Listar Productos</h2>
           </li>
-          <li className="flex gap-3 px-5 py-2 rounded-lg bg-neutral-800">
+          <li className="flex gap-3 px-5 py-2 rounded-lg bg-neutral-800 cursor-pointer active:bg-neutral-950 duration-200" onClick={() => setPage("create")}>
             <h2 className="font-semibold">Crear Producto</h2>
           </li>
         </ul>
 
       </aside>
 
-        {
-          page == "create" &&
-          <AddProductForm />
-        }
-        {
-          page == "show" &&
-          <ShowProducts />
-        }
+      {
+        page == "show" &&
+        <ShowProducts />
+      }
+      {
+        page == "create" &&
+        <AddProductForm />
+      }
 
     </section>
 
