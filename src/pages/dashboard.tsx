@@ -18,7 +18,7 @@ export function Dashboard () {
         </header>
 
         <ul className="felx gap-5 py-5 space-y-3">
-          <li className="flex gap-3 px-5 py-2 rounded-lg bg-neutral-800">
+          <li className="flex gap-3 px-5 py-2 rounded-lg bg-neutral-800 cursor-pointer active:bg-neutral-950 duration-200" onClick={() => setPage("show")}>
             <h2 className="font-semibold">Listar Productos</h2>
           </li>
           <li className="flex gap-3 px-5 py-2 rounded-lg bg-neutral-800 cursor-pointer active:bg-neutral-950 duration-200" onClick={() => setPage("create")}>
