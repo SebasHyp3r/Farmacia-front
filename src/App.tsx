@@ -1,6 +1,6 @@
 import { Route } from 'wouter'
 import './App.css'
-import { Login } from './pages/login'
+// import { Login } from './pages/login'
 import { Dashboard } from './pages/dashboard'
 import { Toaster } from 'sonner'
 
