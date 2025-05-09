@@ -25,7 +25,7 @@ export function Dashboard () {
             <li className="flex gap-3 py-2 cursor-pointer active:bg-neutral-950 duration-200 hover:text-amber-200" 
             onClick={() => setPage("create")}>
               <IconPlus />
-              <h2 className="font-semibold">Crear Producto</h2>
+              <h2 className="font-semibold">Administrar Producto</h2>
             </li>
           </ul>
 
