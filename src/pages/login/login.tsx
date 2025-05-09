@@ -1,4 +1,4 @@
-import { FormEvent, useEffect, useRef, useState } from "react"
+import { FormEvent, useRef, useState } from "react"
 import { toast } from "sonner"
 
 export function Login () {
