@@ -10,7 +10,7 @@ function App() {
     <>
       <Toaster richColors />
       <Route path="/" component={LandingPage} />
-      <Route path="/login" component={Login} />
+      {/* <Route path="/login" component={Login} /> */}
       <Route path="/dashboard" component={Dashboard} />
     </>
   )
