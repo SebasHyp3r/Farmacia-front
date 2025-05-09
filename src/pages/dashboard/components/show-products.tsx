@@ -122,7 +122,7 @@ export function ShowProducts() {
       </section>
 
       {
-        <section className="relative overflow-auto shadow-md rounded-lg max-h-[465px]">
+        <section className="relative overflow-auto shadow-md rounded-lg max-h-[630px]">
           <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
             <thead className="uppercase bg-neutral-900 text-gray-400 sticky top-0 left-0">
               <tr>
