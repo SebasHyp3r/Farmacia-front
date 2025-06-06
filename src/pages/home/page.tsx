@@ -6,8 +6,8 @@ export function Home() {
 
   const showModal = () => {
 
-    const modal = document.getElementById("chat-modal")?.classList
-    modal?.toggle("hidden")
+    const chat = document.getElementById("chat-modal")?.classList
+    chat?.toggle("hidden")
 
   }
 

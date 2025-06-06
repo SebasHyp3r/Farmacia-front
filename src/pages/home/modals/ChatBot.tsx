@@ -1,4 +1,4 @@
-import { IconSend } from "@tabler/icons-react";
+import { IconSend, IconX } from "@tabler/icons-react";
 import { FormEvent, useState } from "react";
 import { toast } from "sonner";
 
@@ -13,6 +13,10 @@ export function ChatBot() {
   const [messages, setMessages] = useState<Mensaje[]>([])
   const [loading, setLoading] = useState(false)
 
+  const hideChatBot = () => {
+    const chat = document.getElementById("chat-modal")?.classList
+    chat?.toggle("hidden")
+  }
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault()
@@ -49,8 +53,9 @@ export function ChatBot() {
     <section className=" w-screen h-screen bg-[rgba(0,0,0,0.7)] absolute top-0 left-0 z-10" id="chat-modal">
       <div className="w-full h-full flex justify-center p-10">
         <form className="w-[600px] bg-neutral-950 rounded-xl border border-[#1c1d1d]" onSubmit={handleSubmit}>
-          <header className="p-3 border-b border-[#1c1d1d]">
+          <header className="p-3 border-b border-[#1c1d1d] flex justify-between items-center">
             <span className="font-semibold">ChatBot v1.1.0</span>
+            <IconX className="cursor-pointer" onClick={hideChatBot} />
           </header>
 
           <section className="h-[404px] overflow-y-auto p-4 flex flex-col gap-3 scroll-hidden">
