@@ -1,10 +1,19 @@
+import { IconMessageCircleFilled } from "@tabler/icons-react";
 import { NavHeader } from "./components/NavHeader";
+import { ChatBot } from "./modals/ChatBot";
 
 export function Home() {
 
-  return (
+  const showModal = () => {
 
-    <main className="w-screen h-screen bg-black text-gray-200">
+    const modal = document.getElementById("chat-modal")?.classList
+    modal?.toggle("hidden")
+
+  }
+
+  return (
+    <main className="w-screen h-screen bg-black text-gray-200 relative">
+      <ChatBot />
       <NavHeader />
       <section className="w-full flex justify-center">
         <div className="py-16 max-w-5xl">
@@ -20,8 +29,9 @@ export function Home() {
         </div>
       </section>
 
+      <button type="button" className="rounded-full p-4 border border-[#1c1d1d] hover: duration-300 absolute bottom-7 right-7 cursor-pointer hover:scale-110" onClick={showModal}>
+        <IconMessageCircleFilled />
+      </button>
     </main>
-
   )
-
 }
